@@ -1,0 +1,69 @@
+@use './base/vars' as *;
+
+.header {
+	padding-block: 24px 58px;
+	background-color: var(--primary-bg);
+	&-text {
+		font-family: $secondary-font;
+		font-weight: 400;
+		font-size: 24px;
+	}
+	&-col-l {
+		max-width: 617px;
+	}
+
+	&-title {
+		margin-bottom: 14px;
+	}
+}
+
+.top-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 45px;
+}
+
+.header-logo__quote {
+	position: relative;
+	padding-top: 19px;
+	max-width: 126px;
+	font-weight: 400;
+	font-style: italic;
+	color: var(--main-color);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 23px;
+		left: -21px;
+		bottom: 0;
+		width: 1px;
+		height: 36px;
+		background-color: #fff;
+	}
+}
+.header-call {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	a {
+		font-family: $secondary-font;
+		font-weight: 400;
+		font-size: 24px;
+		text-decoration: underline;
+		color: var(--secondary-color);
+		text-decoration: none;
+	}
+}
+
+.header-btn {
+	font-weight: 700;
+	text-decoration: underline;
+	color: var(--main-color);
+}

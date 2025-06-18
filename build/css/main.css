@@ -165,7 +165,7 @@ p + p {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -187,6 +187,88 @@ body {
 
 .footer {
   margin-top: auto;
+}
+
+.header {
+  padding-block: 24px 58px;
+  background-color: var(--primary-bg);
+}
+.header-text {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.header-col-l {
+  max-width: 617px;
+}
+.header-title {
+  margin-bottom: 14px;
+}
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 45px;
+}
+
+.header-logo__quote {
+  position: relative;
+  padding-top: 19px;
+  max-width: 126px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--main-color);
+}
+.header-logo__quote::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: -21px;
+  bottom: 0;
+  width: 1px;
+  height: 36px;
+  background-color: #fff;
+}
+
+.header-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header-call a {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: underline;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.header-btn {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--main-color);
 }
 
 .none {
@@ -227,13 +309,9 @@ body {
   margin-bottom: 5em;
 }
 
-.logo, a.logo, a.logo:link {
-  font-size: 28px;
-  font-weight: 700;
-  text-decoration: none;
-}
-.logo a, a.logo a, a.logo:link a {
-  text-decoration: none;
+.logo {
+  width: 296px;
+  height: 98px;
 }
 
 .btn,
@@ -259,24 +337,59 @@ a.btn--wide {
   width: 100%;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 32px;
+.h1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 0.98438;
+  color: var(--main-color);
 }
 
-.title-1 {
-  font-weight: 700;
-  font-size: 32px;
+.svg-moon {
+  width: 20px;
+  height: 20px;
 }
 
-.title-2 {
-  font-weight: 700;
-  font-size: 26px;
+.svg-right {
+  width: 16px;
+  height: 16px;
 }
 
-.title-3 {
-  font-weight: 600;
-  font-size: 20px;
+.svg-sun {
+  width: 26px;
+  height: 25px;
+}
+
+.svg-cloudy {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-snowflake {
+  width: 22px;
+  height: 22px;
+}
+
+.header-weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+  margin-bottom: 12px;
+}
+
+.header-weather__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 
 .input {

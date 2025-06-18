@@ -100,12 +100,12 @@ task('sprite', function () {
 							svgo: {
 								js2svg: { indent: 4, pretty: true },
 								plugins: [
-									{
-										name: 'removeAttrs',
-										params: {
-											attrs: '(fill|stroke)',
-										},
-									},
+									// {
+									// 	name: 'removeAttrs',
+									// 	params: {
+									// 		attrs: '(fill|stroke)',
+									// 	},
+									// },
 								],
 							},
 						},
