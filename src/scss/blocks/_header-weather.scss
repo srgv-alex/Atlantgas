@@ -2,6 +2,9 @@
 	display: flex;
 	column-gap: 34px;
 	margin-bottom: 12px;
+	@media (max-width: 600px) {
+		justify-content: space-between;
+	}
 }
 .header-weather__left {
 }
@@ -9,6 +12,10 @@
 	display: flex;
 	align-items: center;
 	column-gap: 8px;
+	margin-bottom: 4px;
+	@media (max-width: 600px) {
+		justify-content: space-around;
+	}
 }
 
 .header-weather__text {

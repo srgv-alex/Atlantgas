@@ -1,0 +1,93 @@
+@use './base/vars' as *;
+
+.price {
+	font-family: $secondary-font;
+	padding-block: 55px 44px;
+	// background-color: var(--secondary-bg);
+}
+
+.price__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 16px;
+	gap: 16px;
+}
+
+.price-item {
+	max-width: 259px;
+	text-align: start;
+}
+.price-propan {
+}
+
+.price-subtitle {
+	margin-bottom: 21px;
+}
+
+.price-butan-text {
+	font-family: $primary-font;
+	margin-bottom: 50px;
+}
+
+.price-text {
+	font-family: $primary-font;
+	margin-bottom: 28px;
+}
+
+.price-main {
+	position: absolute;
+	bottom: 0;
+	top: -30px;
+	right: 28%;
+	text-align: center;
+	font-weight: 400;
+}
+.price-main__text {
+	font-size: 20px;
+	margin-bottom: 13px;
+	opacity: 0.7;
+}
+.price-main__percent {
+	display: flex;
+	justify-content: center;
+	column-gap: 50px;
+	margin-bottom: 6px;
+}
+.price-main__propan {
+	display: flex;
+	flex-direction: column;
+}
+.percent {
+	font-size: 36px;
+	color: rgba(241, 241, 241, 0.7);
+}
+.percent__text {
+	font-size: 18px;
+	color: rgba(241, 241, 241, 0.7);
+}
+.price-main__butan {
+	span {
+		display: block;
+	}
+}
+.price-main__img {
+}
+.price-butan {
+	margin-right: 48px;
+}
+.h2 {
+}
+.price-title {
+}
+.price-subtitle {
+}
+.h3 {
+}
+.price-text {
+}
+.price-btn {
+	font-family: $primary-font;
+}
+.btn {
+}
