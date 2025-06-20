@@ -6,8 +6,7 @@
 		justify-content: space-between;
 	}
 }
-.header-weather__left {
-}
+
 .header-weather__icons {
 	display: flex;
 	align-items: center;
@@ -16,7 +15,4 @@
 	@media (max-width: 600px) {
 		justify-content: space-around;
 	}
-}
-
-.header-weather__text {
 }

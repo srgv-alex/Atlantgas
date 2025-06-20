@@ -91,7 +91,7 @@ legend {
   --main-color: #2194ff;
   --secondary-color: #f1f1f1;
   --primary-bg: #2d2d2d;
-  --secondary-bg: rgba(33, 148, 255, 0.5);
+  --secondary-bg: rgba(33, 148, 255, 0.05);
 }
 
 @font-face {
@@ -365,8 +365,23 @@ body {
 }
 
 .price {
+  position: relative;
   font-family: "Russo One", sans-serif;
-  padding-block: 55px 44px;
+  padding-block: 55px 95px;
+}
+.price::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-bg);
+}
+@media (max-width: 767px) {
+  .price {
+    padding-block: 22px 95px;
+  }
 }
 
 .price__wrapper {
@@ -380,10 +395,24 @@ body {
   padding-left: 16px;
   gap: 16px;
 }
+@media (max-width: 1024px) {
+  .price__wrapper {
+    padding-left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .price-item {
   max-width: 259px;
   text-align: start;
+}
+@media (max-width: 1024px) {
+  .price-item {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .price-subtitle {
@@ -407,6 +436,11 @@ body {
   right: 28%;
   text-align: center;
   font-weight: 400;
+}
+@media (max-width: 1024px) {
+  .price-main {
+    position: static;
+  }
 }
 
 .price-main__text {
@@ -460,6 +494,182 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.advantages {
+  padding-top: 57px;
+}
+@media (max-width: 991px) {
+  .advantages {
+    padding-block: 20px 20px;
+  }
+}
+
+.advantages-items {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 86px;
+  margin-bottom: 23px;
+}
+@media (max-width: 991px) {
+  .advantages-items {
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+    margin-bottom: 35px;
+    row-gap: 50px;
+  }
+}
+
+.advantages-item {
+  width: 306px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .advantages-item {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+.advantages-item__img {
+  margin-bottom: 8px;
+}
+
+.advantages-item__title {
+  margin-bottom: 14px;
+}
+
+.advantages-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .advantages-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.advantages-content__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .advantages-content__img {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages-text {
+  margin-bottom: 5px;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.color {
+  color: var(--main-color);
+}
+
+.advantages-content__text {
+  display: inline-block;
+  padding: 7px 13px;
+  font-weight: 800;
+  font-size: 14px;
+  background-color: var(--main-color);
+}
+
+.gas-order {
+  position: relative;
+  padding-block: 36px 64px;
+}
+.gas-order::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-bg);
+  z-index: -1;
+}
+@media (max-width: 424px) {
+  .gas-order h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .gas-order {
+    padding-block: 20px 40px;
+  }
+}
+
+.gas-order-content {
+  text-align: center;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  margin-bottom: 39px;
+}
+@media (max-width: 767px) {
+  .content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+}
+
+.gas-order__btn {
+  position: relative;
+  margin: 0 auto;
+}
+.gas-order__btn .decor-down-big {
+  position: absolute;
+  right: 9px;
+  bottom: 6px;
+  width: 245px;
+  height: 26px;
+}
+
+.content-item {
+  font-family: "Russo One", sans-serif;
+  padding: 10px 20px;
+  width: 164px;
+  border-radius: 20px;
+  background: rgba(241, 241, 241, 0.2);
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .content-item {
+    width: 50%;
+  }
+}
+
+.content__text {
+  text-shadow: 1px 2px 0 0 rgba(0, 0, 0, 0.25);
+}
+
 .none {
   display: none !important;
 }
@@ -478,24 +688,13 @@ body {
   overflow-y: hidden;
 }
 
-.mb-1 {
-  margin-bottom: 1em;
+.active {
+  background: var(--main-color);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
-
-.mb-2 {
-  margin-bottom: 2em;
-}
-
-.mb-3 {
-  margin-bottom: 3em;
-}
-
-.mb-4 {
-  margin-bottom: 4em;
-}
-
-.mb-5 {
-  margin-bottom: 5em;
+.active:hover {
+  background: var(--main-color);
 }
 
 .logo {
@@ -545,6 +744,32 @@ a.btn--wide {
   background-color: var(--main-color);
 }
 
+.gas-order__btn {
+  position: relative;
+  top: -37px;
+  padding: 29px 75px;
+  margin: 0 auto;
+}
+.gas-order__btn .decor-up-big {
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  width: 272px;
+  height: 44px;
+}
+.gas-order__btn .decor-down-big {
+  position: absolute;
+  right: 9px;
+  bottom: 6px;
+  width: 285px;
+  height: 26px;
+}
+@media (max-width: 767px) {
+  .gas-order__btn {
+    top: 0;
+  }
+}
+
 .h1 {
   font-family: "Russo One", sans-serif;
   font-weight: 400;
@@ -558,6 +783,7 @@ a.btn--wide {
   font-weight: 400;
   font-size: 36px;
   color: var(--main-color);
+  text-align: center;
 }
 
 .h3 {
@@ -578,9 +804,28 @@ a.btn--wide {
   text-align: center;
   color: var(--main-color);
 }
+@media (max-width: 1024px) {
+  .price-title {
+    margin-bottom: 40px;
+  }
+}
 
 .price-item__title {
   color: var(--secondary-color);
+}
+
+.advantages-title {
+  margin-bottom: 24px;
+  color: var(--secondary-color);
+}
+@media (max-width: 424px) {
+  .advantages-title {
+    font-size: 25px;
+  }
+}
+
+.gas-order-title {
+  margin-bottom: 35px;
 }
 
 .svg-moon {
@@ -627,6 +872,19 @@ a.btn--wide {
 .hero-line {
   width: 85px;
   height: 90px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: -137px;
+  right: 47%;
+  width: 99px;
+  height: 64px;
+}
+@media (max-width: 1024px) {
+  .arrow-down {
+    right: 41%;
+  }
 }
 
 .header-weather {

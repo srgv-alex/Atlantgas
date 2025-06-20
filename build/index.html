@@ -17,7 +17,7 @@
 
 <body class="sticky-footer">
 
-	<header class="header">
+	<header class="header none">
 	<div class="container header-container">
 		<div class="top-header">
 			<div class="header__logo">
@@ -119,7 +119,8 @@
 
 	<main class="main">
 
-		<section class="price">
+		<section class="price none">
+	<div class="overlay"></div>
 	<div class="container">
 		<h2 class="h2 price-title">Стоимость газа в&nbsp;ваш газгольдер сегодня</h2>
 		<div class="price__wrapper">
@@ -157,6 +158,132 @@
 				</p>
 				<button class='price-btn btn'>Заказать</button>
 			</div>
+
+			<svg class='arrow-down'>
+				<use href='./img/svgsprite/sprite.symbol.svg#arrow-down'></use>
+			</svg>
+
+		</div>
+	</div>
+</section>
+		<section class="advantages none">
+	<div class="container">
+		<h2 class="h2 advantages-title">Преимущества работы с&nbsp;нашей компанией</h2>
+		<div class="advantages-items">
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/1.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Экономия на&nbsp;хранилище</h4>
+				<p class="advantages-item__text">за&nbsp;счёт собственных цистерн на&nbsp;нашей базе</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/2.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Экономия на&nbsp;транспорте</h4>
+				<p class="advantages-item__text">более 10&nbsp;собственный газовозов</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/3.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Поставки напрямую от&nbsp;производителей</h4>
+				<p class="advantages-item__text">нет наценки на&nbsp;стоимость газа как у&nbsp;перекупщиков
+					и&nbsp;небольших частных компаний</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/4.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Любые объёмы поставки качественного газа</h4>
+				<p class="advantages-item__text">вы&nbsp;получаете объем от&nbsp;1&nbsp;тонны до&nbsp;20&nbsp;тонн,
+					с&nbsp;сертификатом качества газа</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/5.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Оплата удобным для вас способом</h4>
+				<p class="advantages-item__text">все газовозы оснащены терминалами для оплаты вашего заказа</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/6.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Чистый газ без примесей</h4>
+				<p class="advantages-item__text">нет наценки на&nbsp;стоимость газа как у&nbsp;перекупщиков
+					и&nbsp;небольших частных компаний</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/7.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Длина заправочных рукавов&nbsp;&mdash; 50&nbsp;метров</h4>
+				<p class="advantages-item__text">не требуется подъезд автомобиля вплотную к резервуару</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/8.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Доставка сжиженного газа в&nbsp;формате 24/7</h4>
+				<p class="advantages-item__text">привезем газ в&nbsp;удобное для вас время или&nbsp;же по&nbsp;графику
+				</p>
+			</div>
+			<div class="advantages-item">
+				<div class="advantages-item__img">
+					<img src="./img/advantages/9.webp" alt="картинка">
+				</div>
+				<h4 class="h3 advantages-item__title">Аттестованный персонал</h4>
+				<p class="advantages-item__text">квалифицированные сотрудники проведут полную консультацию и&nbsp;дадут
+					рекомендации, если такие нужны будут</p>
+			</div>
+		</div>
+		<div class="advantages-content">
+			<div class="advantages-content__img">
+				<img src="./img/advantages/transp.webp" width='592' height='284' alt="картинка грузовика">
+			</div>
+			<div class="advantages__wrapper">
+				<p class="advantages-text">Благодаря нашему собственному автопарку мы&nbsp;можем давать гарантию,
+					что доставим<span class="color"> за&nbsp;4&nbsp;часа</span></p>
+				<p class="advantages-content__text">Это сильное конкурентное преимущество, которым мы&nbsp;дорожим</p>
+			</div>
+		</div>
+	</div>
+</section>
+		<section class="gas-order">
+	<div class="container">
+		<h2 class="h2 gas-order-title">Выберите свой объём Газовоза</h2>
+		<div class="gas-order-content">
+			<div class="content-wrapper">
+				<div class="content-item active">
+					<span class="content__text">Малый <br>2000&nbsp;л.</span>
+				</div>
+				<div class="content-item">
+					<span class="content__text">Средний<br>6000&nbsp;л.</span>
+				</div>
+				<div class="content-item">
+					<span class="content__text">Стандартный <br>10&nbsp;000&nbsp;л.</span>
+				</div>
+				<div class="content-item">
+					<span class="content__text">Оптовый <br> 40&nbsp;000&nbsp;л.</span>
+				</div>
+			</div>
+			<div class="content-img">
+				<img src="./img/gas-order/1.webp" alt="картинка грузовика">
+			</div>
+			<button class="btn-decor gas-order__btn">Заказать газ
+				<span class="shine">
+					<svg class='decor-up-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
+					</svg>
+				</span>
+				<span class="shadow">
+					<svg class='decor-down-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-down-big'></use>
+					</svg>
+				</span>
+			</button>
 		</div>
 	</div>
 </section>

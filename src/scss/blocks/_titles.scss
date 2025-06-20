@@ -12,6 +12,7 @@
 	font-weight: 400;
 	font-size: 36px;
 	color: var(--main-color);
+	text-align: center;
 }
 
 .h3 {
@@ -31,8 +32,23 @@
 	margin-bottom: 78px;
 	text-align: center;
 	color: var(--main-color);
+	@media (max-width: 1024px) {
+		margin-bottom: 40px;
+	}
 }
 
 .price-item__title {
 	color: var(--secondary-color);
+}
+
+.advantages-title {
+	margin-bottom: 24px;
+	color: var(--secondary-color);
+	@media (max-width: 424px) {
+		font-size: 25px;
+	}
+}
+
+.gas-order-title {
+	margin-bottom: 35px;
 }

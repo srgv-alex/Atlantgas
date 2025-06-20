@@ -42,3 +42,14 @@
 	width: 85px;
 	height: 90px;
 }
+
+.arrow-down {
+	position: absolute;
+	bottom: -137px;
+	right: 47%;
+	width: 99px;
+	height: 64px;
+	@media (max-width: 1024px) {
+		right: 41%;
+	}
+}
