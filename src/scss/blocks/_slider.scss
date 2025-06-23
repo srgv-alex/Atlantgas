@@ -1,0 +1,58 @@
+@use './base/vars' as *;
+
+.swiper-slide {
+	width: 759px;
+	padding: 40px 59px 40px 40px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+	background-color: var(--secondary-color);
+	border-radius: 40px;
+	p + p {
+		margin-top: 0;
+	}
+}
+
+.swiper {
+	max-width: 759px;
+}
+.swiper-slide__wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 23px;
+}
+.swiper-slide__img {
+	overflow: hidden;
+	flex-shrink: 0;
+	img {
+		border-radius: 25px;
+	}
+}
+.swiper-slide__content {
+}
+.swiper-slide__name {
+	margin-bottom: 4px;
+	font-family: $secondary-font;
+	font-weight: 400;
+	font-size: 24px;
+	color: var(--main-color);
+}
+.swiper-slide__city {
+	margin-bottom: 15px;
+	font-family: $secondary-font;
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--primary-bg);
+}
+.swiper-slide__text {
+	color: var(--primary-bg);
+}
+
+.swiper-button-prev {
+	&::after {
+		content: '';
+	}
+}
+.swiper-button-next {
+	&::after {
+		content: '';
+	}
+}

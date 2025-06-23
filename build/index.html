@@ -8,8 +8,8 @@
 
 	<title>Стартовый шаблон</title>
 	<link rel="stylesheet" href="./js/fancybox/fancybox.css">
-	<link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
-	<link rel="stylesheet" href="./../css/main.css">
+	<link rel="stylesheet" href="./js/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/main.css">
 
 	<!-- <link rel="icon" type="image/x-icon" href="">
 	<link rel="apple-touch-icon" sizes="180x180" href=""> -->
@@ -251,7 +251,7 @@
 		</div>
 	</div>
 </section>
-		<section class="gas-order">
+		<section class="gas-order none">
 	<div class="container">
 		<h2 class="h2 gas-order-title">Выберите свой объём Газовоза</h2>
 		<div class="gas-order-content">
@@ -287,6 +287,61 @@
 		</div>
 	</div>
 </section>
+		<section class="reviews">
+	<div class="container">
+		<h2 class="h2 reviews-title">Отзывы наших клиентов</h2>
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-slide__wrapper">
+						<div class="swiper-slide__img">
+							<img src="./img/slider/olga.webp" width='201' height='240'
+								alt="фото человека оставившего отзыв">
+						</div>
+						<div class="swiper-slide__content">
+							<p class="swiper-slide__name">Ольга&nbsp;И.</p>
+							<p class="swiper-slide__city">Красногорск</p>
+							<p class="swiper-slide__text">Я&nbsp;всегда боюсь газа , а&nbsp;особенно боюсь что
+								он&nbsp;может взорваться, как&nbsp;же мне помог Андрей водитель-экспедитор показал что
+								бояться тут нечего и&nbsp;самое главное моего присутствие даже не&nbsp;понадобится.
+								Спасибо компании за&nbsp;то&nbsp;что они все закрыли этот вопрос под ключ.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide__wrapper">
+						<div class="swiper-slide__img">
+							<img src="./img/slider/olga.webp" width='201' height='240'
+								alt="фото человека оставившего отзыв">
+						</div>
+						<div class="swiper-slide__content">
+							<p class="swiper-slide__name">Ольга&nbsp;И.</p>
+							<p class="swiper-slide__city">Красногорск</p>
+							<p class="swiper-slide__text">Я&nbsp;всегда боюсь газа , а&nbsp;особенно боюсь что
+								он&nbsp;может взорваться, как&nbsp;же мне помог Андрей водитель-экспедитор показал что
+								бояться тут нечего и&nbsp;самое главное моего присутствие даже не&nbsp;понадобится.
+								Спасибо компании за&nbsp;то&nbsp;что они все закрыли этот вопрос под ключ.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev">
+				<svg class="arrow-l">
+					<use href='./img/svgsprite/sprite.symbol.svg#arrow-l'></use>
+				</svg>
+			</div>
+			<div class="swiper-button-next">
+				<svg class="arrow-r">
+					<use href='./img/svgsprite/sprite.symbol.svg#arrow-r'></use>
+				</svg>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 	</main>
@@ -301,13 +356,13 @@
 
 
 	<!-- Vendors -->
-	<script src="./../js/fancybox/fancybox.umd.js"></script>
-	<script src="./../js/tiny-slider/tiny-slider.js"></script>
+	<script src="./js/fancybox/fancybox.umd.js"></script>
+	<script src="./js/swiper/swiper-bundle.min.js"></script>
 
 	<!-- Скрипты -->
 
-	<script src="./../js/tinySlider.js"></script>
-	<script src="./../js/main.js"></script>
+	<script src="./js/swiper.js"></script>
+	<script src="./js/main.js"></script>
 
 </body>
 
