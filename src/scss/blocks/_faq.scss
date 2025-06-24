@@ -1,0 +1,10 @@
+@use './base/vars' as *;
+
+.faq {
+	padding-block: 37px 40px;
+	background: var(--secondary-bg);
+}
+
+.faq-title {
+	margin-bottom: 27px;
+}

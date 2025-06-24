@@ -2,4 +2,7 @@
 
 .reviews {
 	padding-block: 40px;
+	@media (max-width: 767px) {
+		padding-block: 15px;
+	}
 }
