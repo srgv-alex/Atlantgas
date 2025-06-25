@@ -1,8 +1,14 @@
 @use './base/vars' as *;
 
 .faq {
-	padding-block: 37px 40px;
+	padding-block: 31px 40px;
 	background: var(--secondary-bg);
+}
+
+.faq {
+	h2 {
+		text-align: start;
+	}
 }
 
 .faq-title {

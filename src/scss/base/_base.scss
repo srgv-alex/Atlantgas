@@ -19,8 +19,8 @@ a:visited {
 	text-decoration: underline;
 }
 
-a:focus,
-button:focus {
+a:focus-visible,
+button:focus-visible {
 	outline-offset: 1px;
 	outline: #005fcc auto 1px;
 }

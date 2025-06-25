@@ -1,0 +1,52 @@
+@use './base/vars' as *;
+
+.faq {
+	h2 {
+		text-align: start;
+	}
+}
+.topic {
+	padding: 24px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.topic + .topic {
+	margin-top: -1px;
+}
+
+.faq-title {
+	padding-left: 163px;
+}
+
+.topic__btn {
+	display: flex;
+	align-items: center;
+	column-gap: 22px;
+}
+
+.topic__title {
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	transition: color 0.3s ease-in;
+}
+.topic__content {
+	padding-left: 36px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-in;
+}
+
+.topic.topic--open {
+	.topic__title {
+		color: var(--main-color);
+	}
+}
+
+.topic__content-padding {
+	padding-top: 16px;
+}
+
+.faq__topics {
+	padding-left: 32px;
+}

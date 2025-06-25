@@ -155,8 +155,8 @@ a:visited {
   text-decoration: underline;
 }
 
-a:focus,
-button:focus {
+a:focus-visible,
+button:focus-visible {
   outline-offset: 1px;
   outline: #005fcc auto 1px;
 }
@@ -680,8 +680,12 @@ body {
 }
 
 .faq {
-  padding-block: 37px 40px;
+  padding-block: 31px 40px;
   background: var(--secondary-bg);
+}
+
+.faq h2 {
+  text-align: start;
 }
 
 .faq-title {
@@ -916,6 +920,11 @@ a.btn--wide {
   }
 }
 
+.svg-accordion {
+  width: 16px;
+  height: 16px;
+}
+
 .header-weather {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1088,4 +1097,62 @@ a.btn--wide {
 
 .swiper-button-prev {
   left: 6px;
+}
+
+.faq h2 {
+  text-align: start;
+}
+
+.topic {
+  padding: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.topic + .topic {
+  margin-top: -1px;
+}
+
+.faq-title {
+  padding-left: 163px;
+}
+
+.topic__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 22px;
+     -moz-column-gap: 22px;
+          column-gap: 22px;
+}
+
+.topic__title {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.topic__content {
+  padding-left: 36px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.4s ease-in;
+  transition: max-height 0.4s ease-in;
+}
+
+.topic.topic--open .topic__title {
+  color: var(--main-color);
+}
+
+.topic__content-padding {
+  padding-top: 16px;
+}
+
+.faq__topics {
+  padding-left: 32px;
 }
