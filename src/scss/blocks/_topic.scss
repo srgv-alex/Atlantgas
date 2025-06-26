@@ -3,6 +3,12 @@
 .faq {
 	h2 {
 		text-align: start;
+		@media (max-width: 1024px) {
+			text-align: center;
+		}
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
 	}
 }
 .topic {
@@ -14,14 +20,13 @@
 	margin-top: -1px;
 }
 
-.faq-title {
-	padding-left: 163px;
-}
-
 .topic__btn {
 	display: flex;
 	align-items: center;
 	column-gap: 22px;
+	@media (max-width: 550px) {
+		column-gap: 15px;
+	}
 }
 
 .topic__title {
@@ -29,6 +34,9 @@
 	font-size: 16px;
 	text-transform: uppercase;
 	transition: color 0.3s ease-in;
+	@media (max-width: 424px) {
+		font-size: 13px;
+	}
 }
 .topic__content {
 	padding-left: 36px;

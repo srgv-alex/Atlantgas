@@ -13,4 +13,11 @@
 
 .faq-title {
 	margin-bottom: 27px;
+	padding-left: 163px;
+	@media (max-width: 1024px) {
+		padding-left: 0px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 15px;
+	}
 }

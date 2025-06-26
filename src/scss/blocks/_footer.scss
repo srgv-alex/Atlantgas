@@ -1,0 +1,60 @@
+@use './base/vars' as *;
+
+.office {
+	&-container {
+		display: flex;
+		flex-wrap: wrap;
+		border-radius: 33px;
+		overflow: hidden;
+	}
+
+	&__info {
+		flex: 1 1 50%;
+		background-color: var(--secondary-color);
+	}
+
+	&__map {
+		flex: 1 1 50%;
+	}
+
+	h2 {
+		margin-bottom: 16px;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #1b2639;
+	}
+
+	&__divider {
+		margin: 21px 0 31px;
+		border: 1px solid rgba(27, 38, 57, 0.2);
+	}
+
+	&__details {
+		font-weight: 400;
+		font-size: 18px;
+		color: #1b2639;
+		p {
+			margin-bottom: 45px;
+			strong {
+				color: var(--main-color);
+			}
+		}
+	}
+}
+
+.office__footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 32px 68px;
+	width: 100%;
+	a {
+		font-weight: 400;
+		font-size: 14px;
+		text-decoration: underline;
+		color: var(--secondary-color);
+	}
+}

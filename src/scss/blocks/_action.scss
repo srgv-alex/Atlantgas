@@ -1,0 +1,90 @@
+@use './base/vars' as *;
+
+.action {
+	padding-block: 55px 40px;
+	@media (max-width: 424px) {
+		padding-block: 15px 15px;
+	}
+	h2 {
+		@media (max-width: 424px) {
+			font-size: 20px;
+		}
+	}
+}
+
+.action__wrapper {
+	display: flex;
+	align-items: flex-start;
+	column-gap: 84px;
+	margin-bottom: 34px;
+	@media (max-width: 767px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.action-left {
+}
+
+.title-action {
+	max-width: 520px;
+	margin-bottom: 50px;
+	h3 {
+		text-align: start;
+		color: var(--secondary-color);
+		@media (max-width: 424px) {
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 424px) {
+		margin-bottom: 25px;
+	}
+}
+
+.action-right {
+	position: relative;
+}
+.action-right__img {
+	display: flex;
+	img {
+		flex-shrink: 0;
+		height: 454px;
+	}
+}
+.action-right__content {
+	position: absolute;
+	bottom: 40px;
+	left: -50px;
+	max-width: 209px;
+	padding: 13px 21px 19px 26px;
+	border-radius: 20px;
+	background-color: var(--main-bg-80);
+	@media (max-width: 424px) {
+		left: 25px;
+	}
+}
+.name {
+	font-family: $secondary-font;
+	font-weight: 400;
+	font-size: 24px;
+}
+.job {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+button.form-btn {
+	max-width: 220px;
+	padding: 10px 14px;
+	&:hover {
+		background-color: #1259b6;
+	}
+	@media (max-width: 767px) {
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.action-title {
+	max-width: 680px;
+	margin: 0 auto 11px;
+}

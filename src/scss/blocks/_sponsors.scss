@@ -1,0 +1,25 @@
+@use './base/vars' as *;
+
+.sponsors {
+	margin-bottom: 34px;
+}
+.sponsors__wrapper {
+	display: flex;
+	column-gap: 17px;
+	@media (max-width: 767px) {
+		flex-wrap: wrap;
+		row-gap: 15px;
+	}
+}
+.sponsors-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 166px;
+	height: 66px;
+	border-radius: 20px;
+	background-color: var(--secondary-color);
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+}

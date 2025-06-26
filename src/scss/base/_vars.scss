@@ -3,6 +3,8 @@ $secondary-font: 'Russo One', sans-serif;
 
 :root {
 	--main-color: #2194ff;
+	--main-color-rgb: 33, 148, 255;
+	--main-bg-80: rgba(var(--main-color-rgb), 0.8);
 	--secondary-color: #f1f1f1;
 	--primary-bg: #2d2d2d;
 	--secondary-bg: rgba(33, 148, 255, 0.05);
