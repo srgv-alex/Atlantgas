@@ -17,7 +17,7 @@
 
 <body class="sticky-footer">
 
-	<header class="header none">
+	<header class="header">
 	<div class="container header-container">
 		<div class="top-header">
 			<div class="header__logo">
@@ -75,7 +75,7 @@
 						</svg>
 					</span>
 				</p>
-				<button class="btn-decor btn-header">Заказать доставку газа в&nbsp;газгольдер
+				<button class="btn-decor btn-header" data-action="modal">Заказать доставку газа в&nbsp;газгольдер
 					<span class="shine">
 						<svg class='decor-up-big'>
 							<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
@@ -99,27 +99,9 @@
 	</div>
 </header>
 
-	<!-- <section class="mobile-nav">
-		<h2 class="visually-hidden">Мобильная навигация</h2>
-
-		<button class="mobile-nav__btn" id="closeMobileNav">
-			<img src="./img/icons/nav-btn-close.svg" alt="Close navigation">
-		</button>
-
-		<div class="mobile-nav__body">
-			<ul class="mobile-nav-list">
-				<li><a href="#">Локации</a></li>
-				<li><a href="#">Сервис</a></li>
-				<li><a href="#">Тарифы</a></li>
-				<li><a href="#">Расположение</a></li>
-			</ul>
-		</div>
-
-	</section> -->
-
 	<main class="main">
 
-		<section class="price none">
+		<section class="price">
 	<div class="overlay"></div>
 	<div class="container">
 		<h2 class="h2 price-title">Стоимость газа в&nbsp;ваш газгольдер сегодня</h2>
@@ -131,7 +113,7 @@
 					Физически испарение происходит до &minus;40&nbsp;градусов, что позволяет использовать его
 					в&nbsp;наших с&nbsp;вами погодных условиях
 				</p>
-				<button class='price-btn btn'>Заказать</button>
+				<button class='price-btn btn' data-action="modal">Заказать</button>
 			</div>
 			<div class="price-main">
 				<p class="price-main__text">Идеальное соотношение</p>
@@ -156,7 +138,7 @@
 					Испарение Бутана происходит только до&nbsp;0&nbsp;градусов и&nbsp;годится для использования
 					в&nbsp;тёплое время года
 				</p>
-				<button class='price-btn btn'>Заказать</button>
+				<button class='price-btn btn' data-action="modal">Заказать</button>
 			</div>
 
 			<svg class='arrow-down'>
@@ -166,7 +148,7 @@
 		</div>
 	</div>
 </section>
-		<section class="advantages none">
+		<section class="advantages">
 	<div class="container">
 		<h2 class="h2 advantages-title">Преимущества работы с&nbsp;нашей компанией</h2>
 		<div class="advantages-items">
@@ -251,7 +233,7 @@
 		</div>
 	</div>
 </section>
-		<section class="gas-order none">
+		<section class="gas-order">
 	<div class="container">
 		<h2 class="h2 gas-order-title">Выберите свой объём Газовоза</h2>
 		<div class="gas-order-content">
@@ -272,7 +254,7 @@
 			<div class="content-img">
 				<img src="./img/gas-order/1.webp" alt="картинка грузовика">
 			</div>
-			<button class="btn-decor gas-order__btn">Заказать газ
+			<button class="btn-decor gas-order__btn" data-action="modal">Заказать газ
 				<span class="shine">
 					<svg class='decor-up-big'>
 						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
@@ -287,7 +269,7 @@
 		</div>
 	</div>
 </section>
-		<section class="reviews none">
+		<section class="reviews">
 	<div class="container">
 		<h2 class="h2 reviews-title">Отзывы наших клиентов</h2>
 		<div class="swiper">
@@ -391,7 +373,7 @@
 		</div>
 	</div>
 </section>
-		<section class="faq none">
+		<section class="faq">
 	<div class="container">
 		<div class="faq-title">
 			<h2 class="h2 title-faq">Ответы на&nbsp;часто задаваемые вопросы</h2>
@@ -494,7 +476,7 @@
 		</div>
 	</div>
 </section>
-		<section class="action none">
+		<section class="action">
 	<div class="container">
 		<div class="action__wrapper">
 			<div class="action-left">
@@ -552,7 +534,7 @@
 		<div class="action-title">
 			<h2 class="h2">Закажи прямо сейчас и&nbsp;получи бесплатную установку телеметрии﻿</h2>
 		</div>
-		<button class="btn-decor action-btn" type='button'>Заказать газ
+		<button class="btn-decor action-btn" type='button' data-action="modal">Заказать газ
 			<span class="shine">
 				<svg class='decor-up-big'>
 					<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
@@ -584,12 +566,82 @@
 				<img src="./img/map/1.webp" alt="карта местоположения">
 			</div>
 		</div>
-		<div class="office__footer">
-			<a class="office__footer-link" href="#!">Политика конфиденциальности</a>
-			<a class="office__footer-link" href="#!">Согласие на обработку персональных данных</a>
+	</div>
+	<div class="office__footer">
+		<div class="container">
+			<div class="wrapper__links">
+				<a class="office__footer-link" href="#!">Политика конфиденциальности</a>
+				<a class="office__footer-link" href="#!">Согласие на обработку персональных данных</a>
+			</div>
 		</div>
 	</div>
 </footer>
+
+<section class="modal">
+	<div class="modal__body">
+		<div class="modal__head">
+			<h2 class="h3">Доставим газ<br>за 4 часа</h2>
+			<button type='button' id='close-modal'>
+				<svg class="modal-close">
+					<use href='./img/svgsprite/sprite.symbol.svg#modal-close'></use>
+				</svg>
+			</button>
+		</div>
+		<form class="modal__form">
+			<div class="modal__iputs">
+				<input class="modal__input" type="text" placeholder='имя' required>
+				<input class="modal__input" type="tel" placeholder='Телефон' required>
+			</div>
+			<button class="btn-decor modal-btn" type='submit'>
+				<span class="shine">
+					<svg class='decor-up-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
+					</svg>
+				</span>
+				<span class="shadow">
+					<svg class='decor-down-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-down-big'></use>
+					</svg>
+				</span>
+				Заказать доставку газа</button>
+		</form>
+	</div>
+</section>
+
+<section class="modal-thanks">
+	<div class="container">
+		<div class="modal-thanks__header">
+			<div class="modal-thanks__logo">
+				<a href="#!">
+					<svg class="logo">
+						<use href='./img/svgsprite/sprite.symbol.svg#logo-thanks'></use>
+					</svg>
+				</a>
+			</div>
+			<div class="header-call">
+				<a href="tel:+88002000600">8 800 200-06-00</a>
+				<button class="header-btn">Срочный вопрос</button>
+			</div>
+		</div>
+		<div class="modal-thanks__body">
+			<p class="h2 modal-thanks__title">Спасибо за обращение</p>
+			<p class="modal-thanks__subtitle"> наш специалист свяжется <br> с вами в ближайшее время</p>
+			<a class="btn-decor modal-thanks__btn">Вернуться на сайт
+				<span class="shine">
+					<svg class='decor-up-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
+					</svg>
+				</span>
+				<span class="shadow">
+					<svg class='decor-down-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-down-big'></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+
+</section>
 
 
 
@@ -602,6 +654,7 @@
 
 	<script src="./js/swiper.js"></script>
 	<script src="./js/accordion.js"></script>
+	<script src="./js/modal.js"></script>
 	<script src="./js/main.js"></script>
 
 </body>

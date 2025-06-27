@@ -29,6 +29,9 @@
 		padding-left: 0;
 		align-items: center;
 	}
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
 }
 
 .price-item {

@@ -14,9 +14,79 @@
 				<img src="./img/map/1.webp" alt="карта местоположения">
 			</div>
 		</div>
-		<div class="office__footer">
-			<a class="office__footer-link" href="#!">Политика конфиденциальности</a>
-			<a class="office__footer-link" href="#!">Согласие на обработку персональных данных</a>
+	</div>
+	<div class="office__footer">
+		<div class="container">
+			<div class="wrapper__links">
+				<a class="office__footer-link" href="#!">Политика конфиденциальности</a>
+				<a class="office__footer-link" href="#!">Согласие на обработку персональных данных</a>
+			</div>
 		</div>
 	</div>
 </footer>
+
+<section class="modal">
+	<div class="modal__body">
+		<div class="modal__head">
+			<h2 class="h3">Доставим газ<br>за 4 часа</h2>
+			<button type='button' id='close-modal'>
+				<svg class="modal-close">
+					<use href='./img/svgsprite/sprite.symbol.svg#modal-close'></use>
+				</svg>
+			</button>
+		</div>
+		<form class="modal__form">
+			<div class="modal__iputs">
+				<input class="modal__input" type="text" placeholder='имя' required>
+				<input class="modal__input" type="tel" placeholder='Телефон' required>
+			</div>
+			<button class="btn-decor modal-btn" type='submit'>
+				<span class="shine">
+					<svg class='decor-up-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
+					</svg>
+				</span>
+				<span class="shadow">
+					<svg class='decor-down-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-down-big'></use>
+					</svg>
+				</span>
+				Заказать доставку газа</button>
+		</form>
+	</div>
+</section>
+
+<section class="modal-thanks">
+	<div class="container">
+		<div class="modal-thanks__header">
+			<div class="modal-thanks__logo">
+				<a href="#!">
+					<svg class="logo">
+						<use href='./img/svgsprite/sprite.symbol.svg#logo-thanks'></use>
+					</svg>
+				</a>
+			</div>
+			<div class="header-call">
+				<a href="tel:+88002000600">8 800 200-06-00</a>
+				<button class="header-btn">Срочный вопрос</button>
+			</div>
+		</div>
+		<div class="modal-thanks__body">
+			<p class="h2 modal-thanks__title">Спасибо за обращение</p>
+			<p class="modal-thanks__subtitle"> наш специалист свяжется <br> с вами в ближайшее время</p>
+			<a class="btn-decor modal-thanks__btn">Вернуться на сайт
+				<span class="shine">
+					<svg class='decor-up-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-up-big'></use>
+					</svg>
+				</span>
+				<span class="shadow">
+					<svg class='decor-down-big'>
+						<use href='./img/svgsprite/sprite.symbol.svg#decor-down-big'></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</div>
+
+</section>

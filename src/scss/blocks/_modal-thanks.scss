@@ -1,0 +1,54 @@
+@use './base/vars' as *;
+
+.modal-thanks {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--primary-bg);
+}
+
+.modal-thanks__header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 24px;
+}
+.modal-thanks__call {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-thanks__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 160px;
+	p + p {
+		margin-top: 0;
+	}
+}
+
+.modal-thanks__title {
+	font-size: 48px;
+	text-transform: uppercase;
+	margin-bottom: 26px;
+}
+
+.modal-thanks__subtitle {
+	font-family: $secondary-font;
+	font-weight: 400;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: var(--secondary-color);
+	margin-bottom: 51px;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+.modal-thanks__btn {
+	padding: 30px 55px;
+	.decor-up-big {
+		width: 300px;
+	}
+}
