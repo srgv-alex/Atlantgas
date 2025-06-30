@@ -7,6 +7,8 @@
 	width: 100%;
 	height: 100%;
 	background: var(--primary-bg);
+	opacity: 0;
+	pointer-events: none;
 }
 
 .modal-thanks__header {
@@ -48,6 +50,7 @@
 
 .modal-thanks__btn {
 	padding: 30px 55px;
+	text-decoration: none;
 	.decor-up-big {
 		width: 300px;
 	}
